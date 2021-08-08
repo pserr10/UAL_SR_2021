@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Projecto - Sistemas de Róbotica 2021</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i"
+    rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div id="logo" style="display:flex; align-items: center; justify-content: space-between;">
+        <img src="./assets/img/ual.png" width="50px"/>
+        <h1 style="margin-left: 10px;"><a href="index.html">UR5 & Standford</a></h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Introdução</a></li>
+          <li><a class="nav-link scrollto" href="#features">Requisitos</a></li>
+          <li><a class="nav-link scrollto" href="#ur5">UR5</a></li>
+          <li><a class="nav-link scrollto" href="#standford">Standford</a></li>
+          <li><a class="nav-link scrollto" href="#stack">Stack</a></li>
+          <li><a class="nav-link scrollto" href="#team">Grupo</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="hero-text" data-aos="zoom-out">
+      <h2>Sistemas de Róbotica 2021 UAL</h2>
+      <p>UR5 & Standford</p>
+      <a href="#about" class="btn-get-started scrollto">INICIAR</a>
+    </div>
+    <div class="product-screens">
+      <div class="product-screen-1" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/img/product-screen-3.jpeg" alt="">
+      </div>
+      <div class="product-screen-2" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/product-screen-2.jpeg" alt="">
+      </div>
+      <div class="product-screen-3" data-aos="fade-up">
+        <img src="assets/img/product-screen-1.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Introdução</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+            Nesta secção irá encontrar uma breve introdução ao projeto, referentes aos manipuladores robóticos
+            escolhidos pelos elementos do grupo.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 about-img" data-aos="fade-right" dat-aos-delay="100">
+            <img src="assets/img/about-img.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content" data-aos="fade-left" dat-aos-delay="100">
+            <h3>Projeto realizado no âmbito da cadeira de Sistemas de Robótica, dos alunos Nuno Rodrigues, Pedro
+              Carvalho e
+              Pedro Martins, do 3º ano de Engenharia Informática</h3>
+            <p>
+              Este projeto visa o estudo de dois manipuladores robóticos: UR5 e Stanford, onde iremos aprofundar os
+              conhecimentos adquiridos, face a: </p>
+
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Parâmetros Denavit-Hartenber;</li>
+              <li><i class="bi bi-check-circle"></i> Estudo do movimento do manipulador robótico;</li>
+              <li><i class="bi bi-check-circle"></i> Cinemática direta</li>
+              <li><i class="bi bi-check-circle"></i> Cinemática inversa</li>
+            </ul>
+
+            <p>
+              Trazemos também simulações automatizadas de movimento, para uma melhor compreensão da ação dos robôts,
+              desde o ponto inicial até ao end-point.
+              Para além do MatLab, faremos também recurso à toolBox do Peter Corke, para manipulação e estudo de
+              robótica. </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Featuress Section ======= -->
+    <section id="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 offset-lg-4">
+            <div class="section-header">
+              <h3 class="section-title">Componentes de Estudo</h3>
+              <span class="section-divider"></span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-5 features-img">
+            <img src="./assets/img/stanfordManipulator.png" alt="" data-aos="fade-right">
+          </div>
+
+          <div class="col-lg-8 col-md-7 ">
+
+            <div class="row">
+
+              <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
+                <div class="icon"><i class="bi bi-code"></i></div>
+                <h4 class="title"><a href="">Serial Link</a></h4>
+                <p class="description">Os parâmetros de Denavit–Hartenberg (também chamados de parâmetros DH) trata-se
+                  de uma
+                  convenção
+                  introduzida em 1955 por Jacques Denavit e Richar Hartenberg.<br>
+                  Trata-se de quatro parâmetros associados a uma convenção para fixar sistemas de referência aos elos de
+                  uma cadeia cinemática espacial, ou manipulador robótico.
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bi bi-mouse3-fill"></i></div>
+                <h4 class="title"><a href="">Estudo do movimento</a></h4>
+                <p class="description">Este setor, visa o estudo do movimento dos robôts elegidos para este projeto, de
+                  forma dinâmica e automatizada.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box" data-aos="fade-up" dat-aos-delay="100">
+                <div class="icon"><i class="bi bi-record-circle-fill"></i></div>
+                <h4 class="title"><a href="">Cinemática Directa</a></h4>
+                <p class="description"> <br>A cinemática direta refere-se ao uso das equações cinemáticas de um robô
+                  para calcular a posição do efetor final (end-effector) - dispositivo no final de um braço robótico,
+                  projetado para interagir com o ambiente - a partir dos valores especificados para os parâmetros da
+                  junta.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
+                <div class="icon"><i class="bi bi-record-circle"></i></div>
+                <h4 class="title"><a href="">Cinemática Inversa</a></h4>
+                <p class="description">A cinemática inversa é a base para a movimentação dos robôs manipuladores, ou
+                  seja, todas tarefas realizadas pelo robô necessitam do cálculo
+                  da cinemática inversa, sendo assim é considerada a função mais importante dentro do estudo da
+                  cinemática de robôs manipuladores.
+                  <br>
+                  É então designada como o processo de determinação dos parâmetros de uma junta num objeto flexível, de
+                  forma a alcançar o posicionamento adequado.
+                </p>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Featuress Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section class="call-to-action" id="ur5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">UR5</h3>
+            <p class="cta-text"> O UR5 é um robô industrial colaborativo, com 6 graus de liberdade, leve e adaptável que
+              lida com aplicações de serviço médio com
+              flexibilidade máxima. O UR5 foi projetado para uma integração perfeita em uma ampla variedade de
+              aplicações.</p>
+
+            <img src="./assets/img/ur5DHValues.png" alt="" width="35%">
+          </div>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Advanced Featuress Section ======= -->
+    <section class="advanced-features">
+
+      <div class="features-row section-bg" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="advanced-feature-img-left">
+                <video controls loop muted src="./assets/videos/ur5SerialLink.mp4"></video>
+                <div class="toggles">
+                  <button video-src="./assets/videos/ur5SerialLink.mp4" type="button"
+                    class="btn btn-primary btn-sm">MATLAB</button>
+                  <button video-src="./assets/videos/ur5SerialPlot.mp4" type="button"
+                    class="btn btn-primary btn-sm">PLOT</button>
+                </div>
+              </div>
+              <div>
+                <h2>UR5 - Parâmetros Denavit–Hartenberg e SerialLink</h2>
+
+                <p>Aqui iremos demonstrar como podemos "montar" o nosso próprio manipulador UR5, através da junção de
+                  elos dos mesmos, utilizando
+                  os parâmetros da tabela DH supra mencionada.</p>
+
+                <p>Tendo o nosso manipulador 6 graus de liberdade , teremos que criar 6 links, utilizando o método
+                  Link().
+                  Posteriormente, fazemos a junção de todos os links invocando o método SerialLink(L), como podemos
+                  averiguar no video demonstrativo.
+                </p>
+
+                <p>Utilizando mdl_ur5 fazemos o loading automático do modelo ur5, proveniente da toolbox do PeterCork,
+                  por sua vêz, confirmamos o sucesso da criação do SerialLink, comparando as tabelas DH de ambos - sendo
+                  estas iguas.</p>
+
+                <p>Clicando em "plot", vemos uma virtualização do robôt na posição inicial</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="advanced-feature-img-left">
+                <video controls loop muted src="./assets/videos/ur5MoveStudy.mp4"></video>
+                <div class="toggles">
+                  <button video-src="./assets/videos/ur5MoveStudy.mp4" type="button"
+                    class="btn btn-primary btn-sm">MATLAB</button>
+                  <button video-src="./assets/videos/ur5MovePlot.mp4" type="button"
+                    class="btn btn-primary btn-sm">PLOT</button>
+                </div>
+              </div>
+              <div>
+                <h2>UR5 - Estudo do Movimento</h2>
+
+                <p>O estudo do movimento representa uma experiência de automatizar um movimento com o nosso manipulador
+                  robótico.</p>
+
+                <p>Para tal, precisamos criar um vetor tempo t = [0:.070:2]', definindo o término do movimento após 2
+                  segundos, com um intervalo
+                  de amostragem de 70ms.
+                  Computamos a trajetória espaciam com q = jtraj(qz, qr, t), com qz a representar a posição inicial e qr
+                  a posição 'READY'.
+                </p>
+
+                <p>Por fim, o plot dinâmico, guardando o video em formato mp4 com plot(ur5, q, 'movie,
+                  'ur5MoviePlot.mp4')</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row section-bg" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="advanced-feature-img-left">
+                <video controls loop muted src="./assets/videos/ur5ForwardKine.mp4"></video>
+                <div class="toggles">
+                  <button video-src="./assets/videos/ur5ForwardKine.mp4" type="button"
+                    class="btn btn-primary btn-sm">MATLAB</button>
+                  <button video-src="./assets/videos/ur5FkinePlot.mp4" type="button"
+                    class="btn btn-primary btn-sm">PLOT</button>
+                </div>
+              </div>
+              <div>
+                <h2>UR5 - Cinemática Direta</h2>
+                <p> A cinemática direta, permite-nos perceber o end-factor de um manipulador, ou seja, a sua posição
+                  final, dada uma posição incial.
+                  Para tal utilizamos o método fkine(), tal como podemos averiguar no exemplo. Neste caso, procurámos
+                  comprender, dada várias posições iniciais, o comportamento do manipulador, e a diferença de posições
+                  finais.</p>
+                <p>Respetivamente: RobUr5.fkine([0 0 0 0 0 0]), Rob.fkine([pi pi 0 0 0 0]) (aqui os valores não
+                  alteraram substâncialmente, dada a relação
+                  entre 0 e pi, e RobUrk.fkine([pi/4 pi/4 0 0 0 0]). Podemos ver no plot, a diferença dos end effectors,
+                  entre o primeiro e o ultimo RobUr5.Fkine().</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="advanced-feature-img-left">
+                <video controls loop muted src="./assets/videos/ikineBallExample.mp4"></video>
+                <div class="toggles">
+                  <button video-src="./assets/videos/ikineBallExample.mp4" type="button"
+                    class="btn btn-primary btn-sm">MATLAB</button>
+                  <button video-src="./assets/videos/ikineBallPlot.mp4" type="button"
+                    class="btn btn-primary btn-sm">PLOT</button>
+                </div>
+              </div>
+              <div>
+                <h2>UR5 - Cinemática Inversa</h2>
+
+                <p>A cinemática inversa permite, dada a posição do end effector, encontrar a posição inicial e a
+                  velocidade de transladação. Dado isto,
+                  decidimos aplicar o exemplo dado em aula e manipular o nosso robôt de forma a encontrar uma dada bola.
+                  Para tal, usámos:</p>
+
+                <p>p = [0.8 0 0]; ->% posição alvo no espaço da tarefa ([x y z]);
+                  T = transl(p) * troty(pi/2); -> Matriz de transforção
+                  qr(1) = ponto inicial do manipulador.
+                  qqr = ur5.ikine(T, 'ru') -> posição alvo que queremos alcançar
+                  qrt = jtraj(qr, qrr, 50) -> Cria a trajetória espacial conjunta, dados parâmetros passados.
+                  plot_sphere(p, 0.05, 'y'); -> faz o plot da bola na posição alvo "p", com um raio de 0.05.</p>
+
+                <p>Podemos observar a experiência clicando em "plot".</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Advanced Featuress Section -->
+
+
+    <!-- ======= Call To Action Section ======= -->
+    <section class="call-to-action" id="standford">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">Standford</h3>
+            <p class="cta-text">O braço de Stanford é um robô industrial com seis graus de liberdade, projetado na
+              Universidade de Stanford por Victor Scheinman em 1969.
+              O braço de Stanford é um manipulador serial cuja cadeia cinemática consiste em duas juntas de revolução na
+              base, uma junta prismática e uma junta esférica</p>
+
+            <img src="assets/img/stanfDHValues.png" alt width="35%">
+          </div>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+    <!-- ======= Advanced Featuress Section ======= -->
+    <section class="advanced-features">
+
+      <div class="features-row section-bg" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="advanced-feature-img-left">
+                <video controls loop muted src="./assets/videos/StanfSerial.mp4"></video>
+                <div class="toggles">
+                  <button video-src="./assets/videos/StanfSerial.mp4" type="button"
+                    class="btn btn-primary btn-sm">MATLAB</button>
+                  <button video-src="./assets/videos/StanfSerialPlot.mp4" type="button"
+                    class="btn btn-primary btn-sm">PLOT</button>
+                </div>
+              </div>
+              <div>
+                <h2>Stanford - Parâmetros Denavit–Hartenberg e SerialLink</h2>
+
+                <p>Uma vez mais criamos os elos do manipulador robótico de stanford, passando como parâmetros os
+                  respectivos valores
+                  de Denavit-Hartenberg utilizando o método Link() e posteriormente SerialLink, criando assim a ligação
+                  entre todos os elos
+                  do manipulador.</p>
+                <p>Para confirmar que foi bem sucedido, carregámos o modelo de stanford, próprio da toolbox do Peter
+                  Corke, utilizando o código mdl_stanford. Este denominado
+                  por stanf no exemplo no video "matlab".</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="advanced-feature-img-left">
+                <video controls loop muted src="./assets/videos/stanfMovStudy2.mp4"></video>
+                <div class="toggles">
+                  <button video-src="./assets/videos/stanfMovStudy2.mp4" type="button"
+                    class="btn btn-primary btn-sm">MATLAB</button>
+                  <button video-src="./assets/videos/stanfForLoopPlot.mp4" type="button"
+                    class="btn btn-primary btn-sm">PLOT</button>
+                </div>
+              </div>
+              <div>
+                <h2>Stanford - Estudo do Movimento</h2>
+
+                <p>Para este exemplo, decidimos utilizar um ciclo for para criar uma movimento automatizado com o nosso
+                  plot.</p>
+
+                <p> for th1 = 0: 0.1 : pi/2
+                  stanford.plot[0 thi2 0 0 0 0])
+                  pause(0.25)
+                  end</p>
+
+                <p>Concretizamos então uma movimentação do antebraço do manipulador desde da origem do "frame" j-1 até
+                  ao eixo xj por todo o eixo de zj-1 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row section-bg" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="advanced-feature-img-left">
+                <video controls loop muted src="./assets/videos/stanfFkine.mp4"></video>
+                <div class="toggles">
+                  <button video-src="./assets/videos/stanfFkine.mp4" type="button"
+                    class="btn btn-primary btn-sm">MATLAB</button>
+                  <button video-src="./assets/videos/stanfMovementStudyPlot.mp4" type="button"
+                    class="btn btn-primary btn-sm">PLOT</button>
+                </div>
+              </div>
+              <div>
+                <h2>Stanford - Cinemática Direta</h2>
+                <p>Para a cinemática direta do manipulador robótico Stanford, criámos um ponto de partida p
+                  =[-1.5708,0,0,0,1.5708,0],
+                  um vetor tempo t = [0: .064: 2] (descrição), e finalmente aplicámos o método T = stanf.fkine(q),
+                  obtendo 32 matrizes, o que representará
+                  uma boa aplicação da mesma.</p>
+                <p> Podemos então fazer o averiguamento no nosso video demonstrativo, clicando em "plot".</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="advanced-feature-img-left">
+                <video controls loop muted src="./assets/videos/stanfIkine.mp4"></video>
+                <div class="toggles">
+                  <button video-src="./assets/videos/stanfIkine.mp4" type="button"
+                    class="btn btn-primary btn-sm">MATLAB</button>
+                  <button video-src="./assets/videos/stanfIkinePlot.mp4" type="button"
+                    class="btn btn-primary btn-sm">PLOT</button>
+                </div>
+              </div>
+              <div>
+                <h2>Stanford - Cinemática Inversa</h2>
+
+                <p>Partindo da cinemática direta, aproveitamos a variável T e aplicamos o método Ikine(), denominado por
+                  invKinematic. Como podemos averiguar
+                  no video. </p>
+
+                <p>Esta, reversamente à cinemática direta, apresenta-nos o conjunto de pontos percorridos, até ao ponto
+                  inicial.</p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Advanced Featuress Section -->
+
+    <!-- ======= More Features Section ======= -->
+    <section id="stack" class="section-bg more-features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h3 class="section-title">Stack</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Para a realização deste projecto recorremos às ferramentas que se seguem.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="box">
+              <img src="./assets/img/matlab.png" width="100%" />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box">
+              <img src="./assets/img/peterCorke.png" width="100%" />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box">
+              <img src="./assets/img/GitHub-Logo.png" width="100%" />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box">
+              <img src="./assets/img/ZWQ2YzRhNTItYzg4Ny00NjA0LWI0NzItZWI5Mzg5ZDc3NDIy_visualstudio_code-card.png"
+                width="100%" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End More Features Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Grupo</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Este trabalho foi realizado pelos seguintes elementos.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-7">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" alt=""></div>
+              <h4>Nuno Rodrigues</h4>
+              <span>Aluno - 30002510</span>
+              <div class="social">
+                <a href="https://twitter.com/Conceptree" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/nunotrodrigues/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-7">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" alt=""></div>
+              <h4>Pedro Carvalho</h4>
+              <span>Aluno - 30002909</span>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/pedro-carvalho-584397192/" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-7">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" alt=""></div>
+              <h4>Pedro Martins</h4>
+              <span>Aluno - 30003748</span>
+              <div class="social">
+                <a href="https://www.linkedin.com/in/pedro-martins-27b7a2155" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-start text-center">
+          <div class="credits">
+            Projecto final de Sistemas de Róbotica | Eng.Informática UAL 2021
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">Introdução</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
